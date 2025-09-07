@@ -19,7 +19,7 @@ public class BaseTest {
     public void open(){
         prop = new configreader();
 //        url= prop.getproperty("url");
-        url="ttp://live.techpanda.org/index.php/";
+        url="http://live.techpanda.org/index.php/";
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
