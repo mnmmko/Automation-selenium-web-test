@@ -13,21 +13,30 @@ public class homepage extends Page{
     private By email=By.xpath("//input[@type='email']");
     private By account=By.xpath("//a//span[text()='Account']");
     private By login=By.xpath("//a[@title='Log In']");
+    private By logout=By.xpath("//a[text()='Log Out']");
+    private By sendaway=By.xpath("//button[text()='Send anyway']");
     public String get_name_of_title(){
-        return driver.findElement(title).getText();
+        return gettext(title);
     }
     public void clickscribe(){
-        driver.findElement(subcribe).click();
+        clickbutton(subcribe);
     }
     public void add_email(String text){
         driver.findElement(email).sendKeys(text);
     }
 
     public void clickaccount(){
-        driver.findElement(account).click();
+            clickbutton(account);
     }
 
     public void clicklogin(){
-        driver.findElement(login).click();
+            clickbutton(login);
+    }
+    public void clicklogout(){
+            clickbutton(logout);
+    }
+    public void clicksendaway() throws InterruptedException {
+        Thread.sleep(500);
+        doubleclickbutton(sendaway);
     }
 }

@@ -20,8 +20,9 @@ public class Test01 extends BaseTest {
     }
 
     @Test(priority = 2,dependsOnMethods = "vertify_email")
-    public  void click_scribe() {
+    public  void click_scribe() throws InterruptedException {
         hp.clickscribe();
+        hp.clicksendaway();
     }
 
 }

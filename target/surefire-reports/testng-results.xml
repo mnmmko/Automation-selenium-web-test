@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="8" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ECommerece" duration-ms="12143" started-at="2025-09-07T12:50:04Z" finished-at="2025-09-07T12:50:16Z">
+    <groups>
+    </groups>
+    <test name="test_ecommerce" duration-ms="12143" started-at="2025-09-07T12:50:04Z" finished-at="2025-09-07T12:50:16Z">
+      <class name="org.example.Test.Test02">
+        <test-method status="PASS" signature="vertify_login_page()[pri:3, instance:org.example.Test.Test02@2cb4c3ab]" name="vertify_login_page" duration-ms="886" started-at="2025-09-07T12:50:07Z" finished-at="2025-09-07T12:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vertify_login_page -->
+        <test-method status="PASS" signature="vertify_login(java.lang.String, java.lang.String)[pri:4, instance:org.example.Test.Test02@2cb4c3ab]" name="vertify_login" duration-ms="4223" started-at="2025-09-07T12:50:08Z" data-provider="logindata" depends-on-methods="org.example.Test.Test02.vertify_login_page" finished-at="2025-09-07T12:50:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cmido86@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jiji142536]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vertify_login -->
+        <test-method status="PASS" signature="vertify_login(java.lang.String, java.lang.String)[pri:4, instance:org.example.Test.Test02@2cb4c3ab]" name="vertify_login" duration-ms="4187" started-at="2025-09-07T12:50:12Z" data-provider="logindata" depends-on-methods="org.example.Test.Test02.vertify_login_page" finished-at="2025-09-07T12:50:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cmido866@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[huhu142536]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vertify_login -->
+      </class> <!-- org.example.Test.Test02 -->
+      <class name="org.example.Test.Test01">
+        <test-method status="PASS" signature="open()[pri:0, instance:org.example.Test.Test01@50f8360d]" name="open" is-config="true" duration-ms="13052" started-at="2025-09-07T12:49:51Z" finished-at="2025-09-07T12:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="vertify_title()[pri:0, instance:org.example.Test.Test01@50f8360d]" name="vertify_title" duration-ms="178" started-at="2025-09-07T12:50:04Z" finished-at="2025-09-07T12:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vertify_title -->
+        <test-method status="PASS" signature="vertify_email()[pri:1, instance:org.example.Test.Test01@50f8360d]" name="vertify_email" duration-ms="142" started-at="2025-09-07T12:50:04Z" depends-on-methods="org.example.Test.Test01.vertify_title" finished-at="2025-09-07T12:50:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vertify_email -->
+        <test-method status="PASS" signature="click_scribe()[pri:2, instance:org.example.Test.Test01@50f8360d]" name="click_scribe" duration-ms="1906" started-at="2025-09-07T12:50:05Z" depends-on-methods="org.example.Test.Test01.vertify_email" finished-at="2025-09-07T12:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_scribe -->
+        <test-method status="PASS" signature="close()[pri:0, instance:org.example.Test.Test01@50f8360d]" name="close" is-config="true" duration-ms="786" started-at="2025-09-07T12:50:16Z" finished-at="2025-09-07T12:50:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- org.example.Test.Test01 -->
+    </test> <!-- test_ecommerce -->
+  </suite> <!-- ECommerece -->
+</testng-results>

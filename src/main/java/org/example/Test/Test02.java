@@ -26,11 +26,17 @@ public class Test02 extends BaseTest{
     }
 
     @Test(priority = 4,dependsOnMethods = "vertify_login_page",dataProvider = "logindata")
-    public void vertify_login(String email, String password) {
+    public void vertify_login(String email, String password) throws InterruptedException {
         lp.enter_email(email);
         lp.enter_password(password);
         lp.click_login();
+        hp.clicksendaway();
+        hp.clickaccount();
+        hp.clicklogout();
+        hp.clickaccount();
+        hp.clicklogin();
     }
+
 
 
 

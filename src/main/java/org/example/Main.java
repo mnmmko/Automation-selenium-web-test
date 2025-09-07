@@ -28,7 +28,8 @@ public class Main {
 //    close();
 //        t1=new Test01();
 //        t1.vertify_title();
-
+         String projectpath=System.getProperty("user.dir");
+        System.out.println(projectpath);
 
     }
     public static void close(){
