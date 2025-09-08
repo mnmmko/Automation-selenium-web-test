@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="8" passed="6">
+<testng-results skipped="0" failed="0" ignored="2" total="9" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="ECommerece" duration-ms="12178" started-at="2025-09-07T13:14:22Z" finished-at="2025-09-07T13:14:34Z">
+  <suite name="ECommerece" duration-ms="17755" started-at="2025-09-08T13:36:55Z" finished-at="2025-09-08T13:37:13Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@47c62251]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="test_ecommerce" duration-ms="12178" started-at="2025-09-07T13:14:22Z" finished-at="2025-09-07T13:14:34Z">
-      <class name="org.example.Test.Test02">
-        <test-method status="PASS" signature="vertify_login_page()[pri:3, instance:org.example.Test.Test02@2cb4c3ab]" name="vertify_login_page" duration-ms="887" started-at="2025-09-07T13:14:24Z" finished-at="2025-09-07T13:14:25Z">
+    <test name="test_ecommerce" duration-ms="13087" started-at="2025-09-08T13:36:55Z" finished-at="2025-09-08T13:37:08Z">
+      <class name="Test.Test02">
+        <test-method status="PASS" signature="vertify_login_page()[pri:3, instance:Test.Test02@6d78f375]" name="vertify_login_page" duration-ms="1041" started-at="2025-09-08T13:36:57Z" finished-at="2025-09-08T13:36:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vertify_login_page -->
-        <test-method status="PASS" signature="vertify_login(java.lang.String, java.lang.String)[pri:4, instance:org.example.Test.Test02@2cb4c3ab]" name="vertify_login" duration-ms="4391" started-at="2025-09-07T13:14:25Z" data-provider="logindata" depends-on-methods="org.example.Test.Test02.vertify_login_page" finished-at="2025-09-07T13:14:30Z">
+        <test-method status="PASS" signature="vertify_login(java.lang.String, java.lang.String)[pri:4, instance:Test.Test02@6d78f375]" name="vertify_login" duration-ms="5494" started-at="2025-09-08T13:36:59Z" data-provider="logindata" depends-on-methods="Test.Test02.vertify_login_page" finished-at="2025-09-08T13:37:04Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vertify_login -->
-        <test-method status="PASS" signature="vertify_login(java.lang.String, java.lang.String)[pri:4, instance:org.example.Test.Test02@2cb4c3ab]" name="vertify_login" duration-ms="4062" started-at="2025-09-07T13:14:30Z" data-provider="logindata" depends-on-methods="org.example.Test.Test02.vertify_login_page" finished-at="2025-09-07T13:14:34Z">
+        <test-method status="PASS" signature="vertify_login(java.lang.String, java.lang.String)[pri:4, instance:Test.Test02@6d78f375]" name="vertify_login" duration-ms="3872" started-at="2025-09-08T13:37:04Z" data-provider="logindata" depends-on-methods="Test.Test02.vertify_login_page" finished-at="2025-09-08T13:37:08Z">
           <params>
             <param index="0">
               <value>
@@ -43,29 +46,66 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vertify_login -->
-      </class> <!-- org.example.Test.Test02 -->
-      <class name="org.example.Test.Test01">
-        <test-method status="PASS" signature="open()[pri:0, instance:org.example.Test.Test01@50f8360d]" name="open" is-config="true" duration-ms="5057" started-at="2025-09-07T13:14:17Z" finished-at="2025-09-07T13:14:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open -->
-        <test-method status="PASS" signature="vertify_title()[pri:0, instance:org.example.Test.Test01@50f8360d]" name="vertify_title" duration-ms="210" started-at="2025-09-07T13:14:22Z" finished-at="2025-09-07T13:14:22Z">
+      </class> <!-- Test.Test02 -->
+      <class name="Test.Test01">
+        <test-method status="PASS" signature="vertify_title()[pri:0, instance:Test.Test01@7ac7a4e4]" name="vertify_title" duration-ms="238" started-at="2025-09-08T13:36:55Z" finished-at="2025-09-08T13:36:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vertify_title -->
-        <test-method status="PASS" signature="vertify_email()[pri:1, instance:org.example.Test.Test01@50f8360d]" name="vertify_email" duration-ms="151" started-at="2025-09-07T13:14:22Z" depends-on-methods="org.example.Test.Test01.vertify_title" finished-at="2025-09-07T13:14:22Z">
+        <test-method status="PASS" signature="vertify_email()[pri:1, instance:Test.Test01@7ac7a4e4]" name="vertify_email" duration-ms="167" started-at="2025-09-08T13:36:55Z" depends-on-methods="Test.Test01.vertify_title" finished-at="2025-09-08T13:36:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vertify_email -->
-        <test-method status="PASS" signature="click_scribe()[pri:2, instance:org.example.Test.Test01@50f8360d]" name="click_scribe" duration-ms="1885" started-at="2025-09-07T13:14:22Z" depends-on-methods="org.example.Test.Test01.vertify_email" finished-at="2025-09-07T13:14:24Z">
+        <test-method status="PASS" signature="click_scribe()[pri:2, instance:Test.Test01@7ac7a4e4]" name="click_scribe" duration-ms="1779" started-at="2025-09-08T13:36:56Z" depends-on-methods="Test.Test01.vertify_email" finished-at="2025-09-08T13:36:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_scribe -->
-        <test-method status="PASS" signature="close()[pri:0, instance:org.example.Test.Test01@50f8360d]" name="close" is-config="true" duration-ms="820" started-at="2025-09-07T13:14:34Z" finished-at="2025-09-07T13:14:35Z">
+      </class> <!-- Test.Test01 -->
+    </test> <!-- test_ecommerce -->
+    <test name="register-cucmber" duration-ms="4652" started-at="2025-09-08T13:37:08Z" finished-at="2025-09-08T13:37:13Z">
+      <class name="runner.TestNGRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGRunner@47c62251]" name="setUpClass" is-config="true" duration-ms="558" started-at="2025-09-08T13:37:08Z" finished-at="2025-09-08T13:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1645f294]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@47c62251]" name="runScenario" duration-ms="4076" started-at="2025-09-08T13:37:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-08T13:37:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["valid register"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@47c62251]" name="tearDownClass" is-config="true" duration-ms="18" started-at="2025-09-08T13:37:13Z" finished-at="2025-09-08T13:37:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestNGRunner -->
+      <class name="Test.Test01">
+        <test-method status="PASS" signature="open()[pri:0, instance:Test.Test01@7ac7a4e4]" name="open" is-config="true" duration-ms="3860" started-at="2025-09-08T13:36:51Z" finished-at="2025-09-08T13:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Test.Test01@7ac7a4e4]" name="close" is-config="true" duration-ms="797" started-at="2025-09-08T13:37:13Z" finished-at="2025-09-08T13:37:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- org.example.Test.Test01 -->
-    </test> <!-- test_ecommerce -->
+      </class> <!-- Test.Test01 -->
+    </test> <!-- register-cucmber -->
   </suite> <!-- ECommerece -->
 </testng-results>
