@@ -8,10 +8,10 @@ public class Loginpage extends Page{
         super(driver);
     }
 
-    private By login_title= By.tagName("h1");
-    private By emails=By.id("email");
-    private By password=By.id("pass");
-    private By login=By.xpath("//button[@title='Login']");
+    private final By login_title= By.tagName("h1");
+    private final By emails=By.id("email");
+    private final By password=By.id("pass");
+    private final By login=By.xpath("//button[@title='Login']");
 
     public String login_title(){
         return driver.findElement(login_title).getText();
@@ -27,5 +27,9 @@ public class Loginpage extends Page{
 
     public void click_login(){
         clickbutton(login);
+    }
+
+    public String get_email_validtied(){
+        return get_element(emails).getAttribute("validationMessage");
     }
 }

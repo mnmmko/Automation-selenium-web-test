@@ -37,6 +37,14 @@ public class Test02 extends BaseTest{
         hp.clicklogin();
     }
 
+    @Test(priority = 5,dependsOnMethods = "vertify_login")
+    public void vertify_invalid_email() {
+        lp.enter_email("invalid_email");
+        lp.click_login();
+        Assert.assertEquals("Please include an '@' in the email address. 'invalid_email' is missing an '@'.",lp.get_email_validtied());
+        System.out.println(lp.get_email_validtied());
+    }
+
 
 
 

@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,6 +35,15 @@ public class Page {
     public void sendtext(By element, String text){
         wait_for_element(driver,20,element);
         driver.findElement(element).sendKeys(text);
+    }
+
+    public String get_text_of_placeholeder(By element){
+        wait_for_element(driver,20,element);
+        return driver.findElement(element).getAttribute("placeholder");
+    }
+
+    public WebElement get_element(By element){
+        return driver.findElement(element);
     }
 
     public void wait_for_element(WebDriver driver, int time, By element){
