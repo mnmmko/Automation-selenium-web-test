@@ -10,7 +10,7 @@ public class configreader {
     public configreader() {
         prop = new Properties();
         try {
-            FileInputStream files = new FileInputStream(projectpath+"\\src\\main\\java\\org\\example\\propreties\\config.properties");
+            FileInputStream files = new FileInputStream(projectpath+"\\src\\main\\java\\propreties\\config.properties");
             prop.load(files);
         }catch (IOException e) {
             e.printStackTrace();
