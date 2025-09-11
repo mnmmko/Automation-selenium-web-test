@@ -1,9 +1,6 @@
 pipeline{
     agent any
-    tools {
-            maven 'Maven-3.9.11'
-            jdk 'jdk-1.8'
-        }
+   
         stages{
             stage('Git Main Branch'){
                 steps{
