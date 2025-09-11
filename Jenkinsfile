@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-                JIRA_SITE = 'https://mnabehqa.atlassian.net'
+                JIRA_SITE = 'https://mnabehqa.atlassian.net/jira/software/projects/TAR/'
                 JIRA_ISSUE = 'SCRUM-1'
             }
         stages{
