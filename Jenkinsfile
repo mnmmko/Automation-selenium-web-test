@@ -11,5 +11,26 @@ pipeline{
                     bat 'mvn clean test -Dbrowser=chrome'
                 }
             }
+            stage('Test'){
+                steps{
+                    sh 'mvn test'
+                }
+            }
+            stages('Report'){
+                steps{
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
         }
+         post {
+                always {
+                    echo 'Pipeline finished!'
+                }
+                failure {
+                    echo 'Build failed ❌'
+                }
+                success {
+                    echo 'Build passed ✅'
+                }
+            }
 }
