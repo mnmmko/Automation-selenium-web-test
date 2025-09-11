@@ -1,8 +1,8 @@
 pipeline{
     agent any
     environment {
-                JIRA_SITE = 'https://mnabehqa.atlassian.net/jira/software/projects/TAR/'
-                JIRA_ISSUE = 'SCRUM-1'
+                JIRA_SITE = 'https://mnabehqa.atlassian.net'
+                JIRA_ISSUE = 'TAR-1'
             }
         stages{
             stage('Git Main Branch'){
