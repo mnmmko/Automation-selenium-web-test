@@ -34,7 +34,19 @@ pipeline{
                               )
                           }
                         }
+
             }
+          stage('test jire site'){
+            steps{
+                script{
+                    def sites = com.atlassian.jira.jenkins.JiraSite.getSites()
+                      for (s in sites) {
+                          echo '👉 Jira Site: ${s.name} | URL: ${s.url}'
+                      }
+
+                }
+            }
+          }
         }
          post {
                 always {
