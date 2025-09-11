@@ -27,9 +27,12 @@ pipeline{
             }
             stage('Update Jira') {
                         steps {
-                            script {
-                                jiraAddComment idOrKey: env.JIRA_ISSUE, comment: "Build #${env.BUILD_NUMBER} finished with status: ${currentBuild.currentResult}"
-                            }
+                           script {
+                              jiraComment(
+                                  issueKey: env.JIRA_ISSUE,
+                                  comment: "🚀 Jenkins Build #${env.BUILD_NUMBER} started"
+                              )
+                          }
                         }
             }
         }
@@ -42,8 +45,11 @@ pipeline{
                 }
                 success {
                         script {
-                            jiraAddComment idOrKey: env.JIRA_ISSUE, comment: "Build passed ✅ – see report: ${env.BUILD_URL}"
-                                }
+                                jiraComment(
+                                    issueKey: env.JIRA_ISSUE,
+                                    comment: "✅ Jenkins Build #${env.BUILD_NUMBER} finished successfully"
+                                )
+                            }
                         }
             }
 }
