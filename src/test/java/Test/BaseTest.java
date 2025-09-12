@@ -53,7 +53,7 @@ public class BaseTest {
 
         ChromeOptions options = new ChromeOptions();
 
-        options.setBinary("C:\\Users\\user\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+//        options.setBinary("C:\\Users\\user\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
         //HashMap key object
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         //arguments
