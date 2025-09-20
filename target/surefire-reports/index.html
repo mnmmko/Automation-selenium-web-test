@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-ECommerece">
-              <span class="suite-name border-failed">ECommerece</span>
+              <span class="suite-name border-passed">ECommerece</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-ECommerece" class="hide-methods failed suite-ECommerece"> (hide)</a> <!-- hide-methods failed suite-ECommerece -->
-                      <a href="#" panel-name="suite-ECommerece" class="show-methods failed suite-ECommerece"> (show)</a> <!-- show-methods failed suite-ECommerece -->
-                    </span>
-                    <div class="method-list-content failed suite-ECommerece">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ECommerece" title="runner.TestNGRunner" hash-for-method="runScenario(&quot;valid register&quot;, &quot;Register&quot;)">runScenario("valid register", "Register")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-ECommerece -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,6 +107,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ECommerece" title="runner.TestNGRunner" hash-for-method="runScenario(&quot;valid register&quot;, &quot;Register&quot;)">runScenario("valid register", "Register")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ECommerece" title="Test.Test01" hash-for-method="vertify_email">vertify_email</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -131,12 +122,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ECommerece" title="Test.Test02" hash-for-method="vertify_login(cmido866@yahoo.com, huhu142536)">vertify_login(cmido866@yahoo.com, huhu142536)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ECommerece" title="Test.Test02" hash-for-method="vertify_login(cmido86@yahoo.com, jiji142536)">vertify_login(cmido86@yahoo.com, jiji142536)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ECommerece" title="Test.Test02" hash-for-method="vertify_login(cmido86@yahoo.com, jiji142536)">vertify_login(cmido86@yahoo.com, jiji142536)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ECommerece" title="Test.Test02" hash-for-method="vertify_login(cmido866@yahoo.com, huhu142536)">vertify_login(cmido866@yahoo.com, huhu142536)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -161,53 +152,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ECommerece" class="panel ECommerece">
-          <div class="suite-ECommerece-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">runner.TestNGRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;valid register&quot;, &quot;Register&quot;)">
-                  </a> <!-- runScenario("valid register", "Register") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("valid register", "Register")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=140.0.7339.81)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-1JDHC0U4&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:12530}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f32111947c6aabb6a7a84da34fb2b2d2
-*** Element info: {Using=xpath, value=//li[@class=&apos;success-msg&apos;]//ul//li//span}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at pages.Page.wait_for_element(Page.java:51)
-	at pages.Page.gettext(Page.java:20)
-	at pages.homepage.register_success_msg(homepage.java:49)
-	at steps.TestRegister.check_register_successfully(TestRegister.java:41)
-	at ✽.register successfully(file:///C:/Users/user/Documents/JAVA/test/src/test/java/features/register.feature:6)
-... Removed 4 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ECommerece-class-failed -->
           <div class="suite-ECommerece-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -223,14 +167,6 @@ Session ID: f32111947c6aabb6a7a84da34fb2b2d2
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="vertify_login(cmido866@yahoo.com, huhu142536)">
-                  </a> <!-- vertify_login(cmido866@yahoo.com, huhu142536) -->
-                  <span class="method-name">vertify_login</span>
-                  <span class="parameters">(cmido866@yahoo.com, huhu142536)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="vertify_login(cmido86@yahoo.com, jiji142536)">
                   </a> <!-- vertify_login(cmido86@yahoo.com, jiji142536) -->
                   <span class="method-name">vertify_login</span>
@@ -239,9 +175,35 @@ Session ID: f32111947c6aabb6a7a84da34fb2b2d2
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="vertify_login(cmido866@yahoo.com, huhu142536)">
+                  </a> <!-- vertify_login(cmido866@yahoo.com, huhu142536) -->
+                  <span class="method-name">vertify_login</span>
+                  <span class="parameters">(cmido866@yahoo.com, huhu142536)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="vertify_login_page">
                   </a> <!-- vertify_login_page -->
                   <span class="method-name">vertify_login_page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ECommerece-class-passed -->
+          <div class="suite-ECommerece-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runner.TestNGRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;valid register&quot;, &quot;Register&quot;)">
+                  </a> <!-- runScenario("valid register", "Register") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("valid register", "Register")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -347,37 +309,37 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runner.TestNGRunner')
-data.setCell(0, 3, 17816);
+data.setCell(0, 1, 'vertify_title')
+data.setCell(0, 2, 'Test.Test01')
+data.setCell(0, 3, 6910);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'vertify_login')
-data.setCell(1, 2, 'Test.Test02')
-data.setCell(1, 3, 4682);
+data.setCell(1, 1, 'vertify_email')
+data.setCell(1, 2, 'Test.Test01')
+data.setCell(1, 3, 6400);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'vertify_login')
 data.setCell(2, 2, 'Test.Test02')
-data.setCell(2, 3, 4459);
+data.setCell(2, 3, 6011);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'click_scribe')
-data.setCell(3, 2, 'Test.Test01')
-data.setCell(3, 3, 1717);
+data.setCell(3, 1, 'vertify_login')
+data.setCell(3, 2, 'Test.Test02')
+data.setCell(3, 3, 4053);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'vertify_login_page')
-data.setCell(4, 2, 'Test.Test02')
-data.setCell(4, 3, 952);
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runner.TestNGRunner')
+data.setCell(4, 3, 3826);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'vertify_invalid_email')
-data.setCell(5, 2, 'Test.Test02')
-data.setCell(5, 3, 481);
+data.setCell(5, 1, 'click_scribe')
+data.setCell(5, 2, 'Test.Test01')
+data.setCell(5, 3, 2014);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'vertify_title')
-data.setCell(6, 2, 'Test.Test01')
-data.setCell(6, 3, 213);
+data.setCell(6, 1, 'vertify_login_page')
+data.setCell(6, 2, 'Test.Test02')
+data.setCell(6, 3, 970);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'vertify_email')
-data.setCell(7, 2, 'Test.Test01')
-data.setCell(7, 3, 145);
+data.setCell(7, 1, 'vertify_invalid_email')
+data.setCell(7, 2, 'Test.Test02')
+data.setCell(7, 3, 392);
 window.suiteTableData['ECommerece']= { tableData: data, tableDiv: 'times-div-ECommerece'}
 return data;
 }
@@ -424,58 +386,58 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">vertify_title</span>
-                <span class="method-start">3955 ms</span>
+                <span class="method-start">23122 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">vertify_email</span>
-                <span class="method-start">4170 ms</span>
+                <span class="method-start">30032 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_scribe</span>
-                <span class="method-start">4316 ms</span>
+                <span class="method-start">36432 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.Test02</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">vertify_login_page</span>
-                <span class="method-start">6034 ms</span>
+                <span class="method-start">38447 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">vertify_login(cmido86@yahoo.com, jiji142536)</span>
-                <span class="method-start">7456 ms</span>
+                <span class="method-start">40104 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">vertify_login(cmido866@yahoo.com, huhu142536)</span>
-                <span class="method-start">11915 ms</span>
+                <span class="method-start">44157 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">vertify_invalid_email</span>
-                <span class="method-start">16598 ms</span>
+                <span class="method-start">50169 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestNGRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@32fa809f)</span>
-                <span class="method-start">17101 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@25b38203)</span>
+                <span class="method-start">50591 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("valid register", "Register")</span>
-                <span class="method-start">18084 ms</span>
+                <span class="method-start">51559 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">35913 ms</span>
+                <span class="method-start">55386 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.Test01</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">close</span>
-                <span class="method-start">35955 ms</span>
+                <span class="method-start">55411 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

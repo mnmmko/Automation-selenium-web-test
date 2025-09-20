@@ -84,7 +84,12 @@
             <version>7.18.1</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.applitools</groupId>
+            <artifactId>eyes-selenium-java3</artifactId>
+            <version>5.0.0</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>

@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class homepage extends Page{
     public homepage(WebDriver driver) {
@@ -47,5 +48,13 @@ public class homepage extends Page{
 
     public String register_success_msg(){
         return gettext(register_msg_success);
+    }
+
+
+    public WebElement get_header_element() {
+        return get_element(title);
+    }
+    public WebElement get_email_element() {
+        return get_element(email);
     }
 }

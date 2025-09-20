@@ -1,5 +1,8 @@
 package Test;
 
+import com.applitools.eyes.RectangleSize;
+import com.applitools.eyes.selenium.Eyes;
+import com.applitools.eyes.selenium.fluent.Target;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Parameters;
@@ -16,6 +19,7 @@ public class BaseTest {
 
     public static WebDriver driver;
     public static String url;
+    public Eyes eyes;
     configreader prop;
 
     @BeforeSuite
@@ -24,16 +28,23 @@ public class BaseTest {
         prop = new configreader();
 //        url= prop.getproperty("url");
         url="http://live.techpanda.org/index.php/";
+        eyes = new Eyes();
+        eyes.setApiKey("q1KaDyLjMiUMcRWkhqp9Bc18SS1HZi5CO2TAXeSmjbk110");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(chromeOption());
-        driver.manage().window().maximize();
         driver.navigate().to(url);
+        driver.manage().window().maximize();
+        eyes.open(driver,"Magento","open app",new RectangleSize(1200, 800));
+        eyes.setForceFullPageScreenshot(true);
+        eyes.check("Magento Home page", Target.window().fully());
+
 
     }
 
     @AfterSuite
     public void close(){
         driver.quit();
+        eyes.close();
     }
 
     protected static String random_email(){

@@ -1,16 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 37.017 sec <<< FAILURE! - in TestSuite
-runScenario(runner.TestNGRunner)  Time elapsed: 17.83 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=140.0.7339.81)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-1JDHC0U4', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:12530}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f32111947c6aabb6a7a84da34fb2b2d2
-*** Element info: {Using=xpath, value=//li[@class='success-msg']//ul//li//span}
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 59.486 sec <<< FAILURE! - in TestSuite
+close(Test.Test01)  Time elapsed: 7.393 sec  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'open app' of 'Magento' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251643929973027/00000251643929972854?accountId=8vau1D9_SEKcoenrPbGKzA__
 
